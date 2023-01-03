@@ -1,0 +1,124 @@
+11:45:14.377 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Status
+11:45:15.027 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:45:15.929 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.929 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.929 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:15.929 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:45:16.272 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > X-RapidAPI-Key: ab72d64ebdmshfea109e4fd68075p19ab3cjsn966ab103535c
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 15
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"url":"gogle"}
+
+11:45:16.272 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > X-RapidAPI-Key: ab72d64ebdmshfea109e4fd68075p19ab3cjsn966ab10546hc
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/google.com\/"}
+
+11:45:16.272 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > X-RapidAPI-Key: ab72d64ebdmshfea109e4fd68075p19ab3cjsn966ab103535c
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/google.com\/"}
+
+11:45:16.272 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://url-shortener-service.p.rapidapi.com/shorten
+1 > X-RapidAPI-Key: ab72d64ebdmshfea109e4fd68075p19ab3cjsn966ab103535c
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: url-shortener-service.p.rapidapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+11:45:17.465 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1190
+1 < 403
+1 < Date: Tue, 03 Jan 2023 14:45:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+1 < X-RapidAPI-Proxy-Response: true
+1 < Server: RapidAPI-1.2.8
+{"message":"You are not subscribed to this API."}
+
+11:45:17.671 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1398
+1 < 400
+1 < Date: Tue, 03 Jan 2023 14:45:17 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < X-RateLimit-Requests-Limit: 1000
+1 < X-RateLimit-Requests-Remaining: 968
+1 < X-RateLimit-Requests-Reset: 77510
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is empty"}
+
+11:45:17.672 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1398
+1 < 400
+1 < Date: Tue, 03 Jan 2023 14:45:17 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Frame-Options: SAMEORIGIN
+1 < Referrer-Policy: same-origin
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < X-RateLimit-Requests-Limit: 1000
+1 < X-RateLimit-Requests-Remaining: 968
+1 < X-RateLimit-Requests-Reset: 77510
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"error":"API Error: URL is invalid (check #1)"}
+
+11:45:17.677 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1404
+1 < 200
+1 < Date: Tue, 03 Jan 2023 14:45:17 GMT
+1 < Content-Type: application/json;charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Content-Security-Policy: default-src 'self' http: https: data: blob: 'unsafe-inline'
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-RateLimit-Requests-Limit: 1000
+1 < X-RateLimit-Requests-Remaining: 968
+1 < X-RateLimit-Requests-Reset: 77510
+1 < Server: RapidAPI-1.2.8
+1 < X-RapidAPI-Version: 1.2.8
+1 < X-RapidAPI-Region: AWS - sa-east-1
+{"result_url":"https:\/\/goolnk.com\/AqJYaW"}
+
+11:45:18.377 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/shortenStatus.feature
